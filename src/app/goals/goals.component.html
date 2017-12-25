@@ -1,0 +1,9 @@
+<h2>My Goals</h2>
+<ul>
+  <li *ngFor = "let goal of goals" (click) = "onSelect(goal)">
+    <span>Name: </span>{{goal.name}}
+  </li>
+</ul>
+
+<app-goal-detail [goal] = "selectedGoal"></app-goal-detail>
+
